@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" type="text/css">
+    <title>Backgournd Video</title>
+    <style>
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10em 0;
+}
+
+header {
+  /* font-size: 20em; */
+  font-size: 15vw;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+svg {
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+
+svg mask rect {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+svg > rect {
+  fill: white;
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.no-svg-header {
+  display: none;
+}
+    </style>
+</head>
+<body>
+        <header class="svg-header">
+                <svg>
+                  EXPLOSAO BRABISSIMA
+                  <mask id="mask">
+                    <rect width="100%" height="100%"/>
+                    <text>
+                      <tspan x="0" y="60%">EXPLOSAO</tspan>
+                      <tspan x="0" dy="0.8em">BRABISSIMA</tspan>
+                    </text>
+                  </mask>
+                  <rect width="100%" height="100%"/>
+                </svg>
+              
+                <video id="video_target" src="/VIDEOS/explosion.mp4" autoplay loop muted></video>
+              </header>
+              
+              <header class="no-svg-header">
+                <h1>gIOVANI FLOREKKKKKKKKKKK</h1>
+              </header>
+              
+              
+              <div class="container">
+                <section>
+                  <h1>Esse header eh mto bonito ne?</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+              </div>
+</body>
+</html>
